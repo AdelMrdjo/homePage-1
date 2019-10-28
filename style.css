@@ -1,0 +1,684 @@
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+	padding:0;
+	margin:0;
+	background:#d3d3d3;
+}
+header{
+	height:70px;
+	width: 100vw;
+	background:#fff;
+	position: fixed;
+	//opacity: 0.2;
+	//transition: all linear .5s;
+}
+/*header:hover{
+	opacity: 1;
+}*/
+header div.logo{
+	height: 100%;
+	width: 200px;
+	float:left;
+	background:#f99e27;
+}
+header div.center{
+	float:left;
+	height: 100%;
+	background:#f99e27;
+	width:80px;
+	clip-path: polygon(0 0, 100% 0, 50% 50%, 0% 100%);
+	position: relative;
+	left:-1px;
+}
+header nav{
+	float:left;
+	padding-left:10px;
+	position: relative;
+	top:60%;
+	transform: translateY(-60%);
+	word-spacing: 5px;
+	font-size:12px;
+}
+div.broj{
+	position: absolute;
+	top:-25px;
+	left:73%;
+	color:#002542;
+	font-size:10px;
+	word-spacing: 2px;
+}
+div.broj i{
+	color:#00baff;
+	color:#f99e27;
+	margin-right:5px;
+}
+div.broj img{
+	width:15px;
+	height: 10px;
+	margin-left:25px;
+}
+nav.nav a{
+	color:#000;
+	text-decoration: none;
+	margin-right: 8px;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+nav.nav a:hover{
+	color:#c1740f;
+}
+/*------------------------------------BANNER------------------------------------------*/
+section.banner{
+	margin-top:-32px;
+	padding:0;
+	height: 100vh;
+	background: url(img/banner.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	border-bottom: 3px solid #f99e27;
+}
+section div.sectioncontent{
+	position: relative;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+section div.sectioncontent p.first{
+	text-align: center;
+	color:#fff;
+	font-size:32px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+}
+section div.sectioncontent p.second{
+	text-align:center;
+	color:#fff;
+	font-size:12px;
+	margin-top:-10px;
+	font-family: 'Roboto', sans-serif;
+}
+section div.sectioncontent a{
+	background:none;
+	color:#fff;
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	text-decoration: none;
+	font-size:16px;
+	font-weight: bold;
+	border:1px solid #f99e27;
+	padding:4px 15px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+section div.sectioncontent a:hover{
+	background:#f99e27;
+	color:#002542;
+}
+/*-------------------------------SERVIS--------------------------------------------*/
+section.service{
+	width:100%;
+	background:#fff;
+	margin-top:-19px;
+}
+section.service h1.mainHead{
+	text-align: center;
+	color:#002542;
+	padding-top:15px;
+	font-family: 'Roboto', sans-serif;
+}
+section.service div.content{
+	width: 90%;
+	margin:0 auto;
+	display: flex;
+	justify-content: center;
+	padding:5px;
+}
+section.service div.content .box{
+	width: 200px;
+	margin-left:15px;
+	padding-right:5px;
+}
+section.service div.content .box .img{
+	//background:#00baff;
+	background:#f99e27;
+	width: 50px;
+	height: 50px;
+	border-radius:50%;
+	padding:10px;
+	margin:0 auto;
+}
+section.service div.content .box .img img{
+	width: 100%;
+	height: 100%;
+}
+section.service div.content .box h1{
+	text-align: center;
+	color:#002542;
+	font-family: 'Roboto', sans-serif;
+}
+section.service div.content .box p{
+	text-align: center;
+	font-size:11px;
+	color:#002542;
+	font-family: 'Roboto', sans-serif;
+}
+/*------------------------------LATEST NEWS---------------------------------------------*/
+section.lnews{
+	background: url(img/contactbackground50.png) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	margin-top:-20px;
+}
+section.lnews h1{
+	text-align: center;
+	padding-top:20px;
+	color:#f99e27;
+	font-family: 'Roboto', sans-serif;
+}
+section.lnews .content{
+	width: 70%;
+	height: 70%;
+	margin:0 auto;
+}
+section.lnews .content .left{
+	width: 49%;
+	height: 100%;
+	float:left;
+	background:#fff;
+	font-family: 'Roboto', sans-serif;
+	margin-right:5px;
+}
+section.lnews .content .left img{
+	width: 100%;
+	height: 50%;
+}
+section.lnews .content .left h1{
+	font-size: 16px;
+	margin-top:-16px;
+	text-align: left;
+	padding-left:10px;
+}
+section.lnews .content .left p{
+	padding-left: 10px;
+	font-size: 11px;
+}
+section.lnews .content .left hr{
+	width: 90%;
+	opacity:.5;
+}
+section.lnews .content .left i{
+	color:#f99e27;
+	margin-right: 5px;
+}
+section.lnews .content .left p span{
+	margin-left: 15px;
+}
+/*-----------------------------SLIDER-----------------------------------------------*/
+section.sreference{
+	width: 100%;
+	height: 400px;
+	background:#fff;
+	margin-top: -19px;
+}
+section.sreference h1{
+	text-align: center;
+	padding-top:20px;
+	color:#f99e27;
+	font-family: 'Roboto', sans-serif;
+}
+section.sreference .content{
+	width: 70%;
+	height: 70%;
+	margin:0 auto;
+}
+section.sreference .content i{
+	font-size: 40px;
+	color:#d3d3d3;
+	position: relative;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+section.sreference .content .prev{
+	width: 15%;
+	height: 100%;
+	float:left;
+}
+section.sreference .content .prev i:hover{
+	color:#f99e27;
+	cursor: pointer;
+}
+section.sreference .content .slika{
+	width: 70%;
+	height: 100%;
+	float:left;
+}
+section.sreference .content .slika img{
+	width: 100%;
+	height: 100%;
+	border-radius:15px;
+}
+section.sreference .content .next{
+	width: 15%;
+	height: 100%;
+	float:left;
+}
+section.sreference .content .next i:hover{
+	color:#f99e27;
+	cursor: pointer;
+}
+section.sreference .status{
+	display:block;
+	text-align: center;
+	margin:5px auto;
+}
+section.sreference .status:hover{
+	cursor: context-menu;
+}
+section.sreference .status span{
+	color:#000;
+	font-size:26px;
+}
+section.sreference .status span:nth-child(1){
+	color:#f99e27;
+}
+/*------------------------------KLIJENTI------------------------------------------*/
+section.clients{
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+section.clients h1{
+	text-align: center;
+	padding-top:10px;
+	color:#f99e27;
+}
+section.clients .content{
+	width: 70%;
+	height: 150px;
+	margin:0 auto;
+	display:flex;
+	margin-top:50px;
+}
+section.clients .content .box{
+	height: 100%;
+	background:#d3d3d3;
+	width: 230px;
+	float:left;
+	margin-right: 3px;
+}
+section.clients .content .box .slika{
+	height: 100%;
+	width: 30%;
+	float:left;
+}
+section.clients .content .box .info{
+	height: 100%;
+	width: 70%;
+	float:left;
+	font-size:10px;
+	margin-left:-20px;
+}
+section.clients .content .box .info p{
+	padding-left:15px;
+}
+section.clients .content .box .slika img{
+	width: 60%;
+	height: 30%;
+	border-radius: 50%;
+}
+
+
+
+/*------------------------------FIRME----------------------------------------------*/
+section.firme{
+	width: 100%;
+	height: 100px;
+	background:#fff;
+}
+section.firme .content{
+	padding-top:20px;
+	width: 70%;
+	height: 100px;
+	margin:0 auto;
+	display: flex;
+	justify-content: center;
+}
+section.firme .content .box{
+	background:#d3d3d3;
+	float:left;
+	width: 70px;
+	height: 60px;
+	margin-right: 25px;
+}
+section.firme .content .box:hover{
+	border-bottom:2px solid #f99e27;
+}
+section.firme .content .box img{
+	width: 100%;
+	height: 100%;
+}
+/*-----------------------------Contact US----------------------------------------------*/
+section.contact{
+	width: 100%;
+	height: 130px;
+	background:#002542;
+	border-bottom: 3px solid #f99e27;
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+}
+section.contact .after{
+	opacity: 1;
+	background: url(img/contactbackground50.png) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	margin-top: -104px;
+	z-index: 1;
+}
+section.contact .content{
+	background:#002542;
+	width: 70%;
+	margin:0 auto;
+	padding-top:20px;
+	color:#fff;
+	z-index: 2;
+}
+section.contact .content p{
+	margin-top:-20px;
+}
+section.contact .content a{
+	float:right;
+	background:#f99e27;
+	text-decoration: none;
+	padding:6px 25px;
+	color:#fff;
+	margin-top:33px;
+	border:none;
+	text-transform: uppercase;
+	font-size:12px;
+	z-index: 100;
+}
+section.contact .content a:hover{
+	color:#f99e27;
+	background:none;
+}
+/*--------------------------------FOOTER-----------------------------------------------*/
+footer.footer{
+	width: 100%;
+	background:#fff;
+	font-family: 'Roboto', sans-serif;
+}
+footer.footer .content{
+	padding-top:20px;
+	width: 90%;
+	height: 200px;
+	margin:0 auto;
+	display: flex;
+	justify-content: center;
+}
+footer.footer .content .box{
+	float:left;
+	margin-left: 40px;
+}
+footer.footer .content .box img{
+	width: 80px;
+	height: 55px;
+	padding-top:10px;
+}
+footer.footer .content .box p{
+	color:#002542;
+	font-size:11px;
+}
+footer.footer .content .box p.naslov{
+	color:#f99e27;
+	text-transform: uppercase;
+	font-size:11px;
+	font-weight: bold;
+}
+footer.footer .content .box a{
+	font-size: 11px;
+	text-decoration: none;
+	color:#002542;
+}
+footer.footer .content .box a:hover{
+	color:#f99e27;
+}
+footer.footer .content .box input{
+	padding:3px 8px;
+}
+footer.footer .content .box a.ok{
+	color:#fff;
+	background:#00baff;
+	background:#f99e27;
+	padding:6.5px;
+	margin-left:-5px;
+	margin-bottom:-10px;
+}
+/*---------------------------------TOP_PAGE_BUTTON------------------------------*/
+button#topBtn{
+	position: fixed;
+	left:97%;
+	top:97%;
+	transform:translate(-97%,-97%);
+	border-radius: 50%;
+	//border:1px solid #00baff;
+	border:1px solid #f99e27;
+	//background:#00baff;
+	background:#f99e27;
+	width: 40px;
+	height: 40px;
+}
+button#topBtn:hover{
+	background:none;
+}
+button#topBtn i{
+	font-size: 20px;
+	color:#fff;
+}
+button#topBtn i:hover{
+	//color:#00baff;
+	color:#f99e27;
+}
+/*-------------------------------RESPONSIVE WEB DESIGN-----------------------------*/
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+	header{
+		display:flex;
+		overflow: hidden;
+	}
+	nav.nav a{
+		padding-bottom: 0px;
+		border:1px solid #fff;
+	}
+	nav.nav a:hover{
+		padding-bottom: 0px;
+		border-bottom:none;
+		color:#00baff;
+	}
+	header nav{
+		border-bottom:none;
+		float:left;
+		padding-left:10px;
+		position: relative;
+		top:100%;
+		word-spacing: 5px;
+		font-size:12px;
+	}
+	div.broj{
+		position: absolute;
+		top:-20px;
+		left:50%;
+		color:#002542;
+		font-size:10px;
+		word-spacing: 2px;
+	}
+	section.contact .after{
+		height: 200px;
+		margin-top:-120px;
+	}
+	section.lnews .content{
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 700px) {
+	header div.logo{
+		padding-left:10px;
+	}
+	header{
+		display:flex;
+		overflow: hidden;
+	}
+	nav.nav a{
+		padding-bottom: 0px;
+		border:1px solid #fff;
+	}
+	nav.nav a:hover{
+		padding-bottom: 0px;
+		border-bottom:none;
+		color:#00baff;
+	}
+	header nav{
+		border-bottom:none;
+		float:left;
+		padding-left:10px;
+		position: relative;
+		top:100%;
+		word-spacing: 5px;
+		font-size:12px;
+	}
+	div.broj{
+		position: absolute;
+		top:-20px;
+		left:50%;
+		color:#002542;
+		font-size:10px;
+		word-spacing: 2px;
+	}
+	footer.footer{
+		height: 400px;
+	}
+	footer.footer .content{
+		display:block;
+		width: 100%;
+	}
+	footer.footer .content .box:nth-child(5){
+		display: block;
+		position: relative;
+		left:50%;
+		transform: translateX(-50%);
+	}
+	section.contact .content{
+		width: 95%;
+	}
+	section.contact .after{
+		height: 200px;
+		margin-top:-120px;
+	}
+	section.firme{
+		height: 220px;
+	}
+	section.firme .content{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	section.firme .content .box{
+		width: 100px;
+	}
+	section.service div.content{
+		width: 100%;
+		margin:0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding:5px;
+	}
+	section.service div.content .box{
+		width: 70%;
+		margin-left:15px;
+		padding-right:5px;
+	}
+	section.service div.content .box p{
+		font-size: 16px;
+	}
+	section.clients{
+		height: 540px;
+	}
+	section.clients .content{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	section.clients .content .box{
+		width: 90%;
+	}
+	section.clients .content .box .info{
+		height: 100%;
+		width: 70%;
+		float:left;
+		font-size:14px;
+		margin-left:-20px;
+	}
+	section.clients .content .box .slika img{
+		width: 50%;
+		height: 40%;
+	}
+	section.sreference .content{
+		width: 100%;
+	}
+	section.lnews{
+		height: 1200px;
+	}
+	section.lnews .content{
+		width: 90%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	section.lnews .content .left{
+		display: flex;
+		flex-wrap: wrap;
+		margin:0 auto;
+		width: 400px;
+		height: 500px;
+		margin-top:20px;
+	}
+	section.lnews .content .left hr{
+		display:none;
+	}
+	section.lnews .content .left p{
+		font-size:14px;
+	}
+	section.lnews .content .right .top .right p{
+		font-size:14px;
+	}
+	section.lnews .content .right .bottom .right p{
+		font-size:14px;
+	}
+	section.lnews .content .right{
+		margin:0 auto;
+		width: 400px;
+		height: 500px;
+	}
+	section.lnews .content .right .top{
+		height: 200px;
+		margin-top:20px;
+	}
+	section.lnews .content .right .bottom{
+		width: 100%;
+		height: 350px;
+		background:#f00;
+		margin-top:25px;
+		overflow: hidden;
+	}
+	section.lnews .content .right .bottom .left{
+		width: 100%;
+		height: 200px;
+	}
+	section.lnews .content .right .bottom .right{
+		background:#fff;
+	}
+}
